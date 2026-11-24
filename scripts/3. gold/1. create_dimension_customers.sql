@@ -26,4 +26,4 @@ LEFT JOIN
         ON ci.cst_key = ca.cid
 LEFT JOIN
     silver.erp_loc_a101 AS la
-        ON ci.cst_key = la.cid;
+        ON ci.cst_key = la.cid
