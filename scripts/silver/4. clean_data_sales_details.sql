@@ -5,6 +5,8 @@ Data consistency between: Sales, Quantity & Price
      * Values must not be NULL, Zero or Negative
  */
 
+TRUNCATE TABLE silver.crm_sales_details
+
 INSERT INTO silver.crm_sales_details
 
 SELECT

@@ -1,3 +1,5 @@
+TRUNCATE TABLE silver.crm_cust_info;
+
 INSERT INTO silver.crm_cust_info
 
 SELECT
@@ -25,4 +27,4 @@ FROM
         bronze.crm_cust_info
     ) new
 WHERE
-    flag_last = 1                                                   -- removes duplicates by only selecting most recent entry
+    flag_last = 1;                                                   -- removes duplicates by only selecting most recent entry

@@ -1,3 +1,5 @@
+TRUNCATE TABLE silver.crm_prd_info;
+
 INSERT INTO silver.crm_prd_info
 
 SELECT
