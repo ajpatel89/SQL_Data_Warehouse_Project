@@ -1,3 +1,5 @@
+CREATE VIEW gold.fact_sales AS
+
 SELECT
     sd.sls_ord_num  						AS order_number,
 	pr.product_key,
