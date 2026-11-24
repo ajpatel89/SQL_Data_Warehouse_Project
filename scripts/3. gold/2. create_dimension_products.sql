@@ -1,7 +1,7 @@
 CREATE VIEW gold.dim_products AS
 
 SELECT
-    ROW_NUMBER() OVER (ORDER BY pn.prd_start_dt, pn.prd_key) AS product_key,
+    ROW_NUMBER() OVER (ORDER BY pn.prd_start_dt, pn.prd_key) AS product_key, -- surrogate key
     pn.prd_id                                                AS product_id,
     pn.prd_key                                               AS product_number,
     pn.prd_nm                                                AS product_name,
